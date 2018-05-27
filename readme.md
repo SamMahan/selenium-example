@@ -19,9 +19,13 @@ in each folder, all of the test objects are appended to an array called testArra
 
 /run
 this folder is responsible for compiling all of the tests together and generating output based on whether or not they are true of false. 
+
 initBrowser.js- initializes the "browser" and "webdriver" objects, as well as any resources that may be needed in thr future. The broswer object for this particular test is configured for chrome. 
+
 testrun.js- this file takes all of the arrays of tests from the /tests folder and plaes them in a larger array. It then uses that array to iterate over every test, trying them and printing "success" or "failed" to the console alongside the name. 
-chromedriver.exe- this is responsible for "driving" chrome, and is needed by selenium to access the webpages that are being tested. 
+
+chromedriver.exe- this is responsible for "driving" chrome, and is needed by selenium to access the webpages that are 
+being tested. 
 
 # Test Objects
 
