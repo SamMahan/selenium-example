@@ -36,9 +36,4 @@
 ehthumbs.db
 Thumbs.db
 
-#custom ignores #
-###############
 node_modules
-GoogleSearch.js
-index.html
-WikiPhilosophy.js
