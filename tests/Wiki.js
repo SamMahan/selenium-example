@@ -12,7 +12,8 @@ const test1 = {
   success: true,
   get: async function() {
     try {
-      utils.browser.get("http://en.wikipedia.org/wiki/Wiki");
+      await utils.browser.get("http://en.wikipedia.org/wiki/Wiki");
+      console.log("this first get");
       await utils.browser
         .findElements(utils.webdriver.By.css('[href^="/wiki/"]'))
         .then(function(links) {

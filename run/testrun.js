@@ -14,8 +14,11 @@ console.log("-------------------------------");
 var check = async function() {
   for (var i = 0; i < testArray.length; i++) {
     for (var b = 0; b < testArray[i].length; b++) {
+      console.log("before object init");
       var testObject = testArray[i][b];
+
       await testObject.get();
+      console.log("after object init");
 
       if (testObject.success == true) {
         console.log(testObject.name + " :successful".bgGreen);
